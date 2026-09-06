@@ -57,7 +57,7 @@ While testing, I found that `calendar.csv` is a **forward-looking availability f
 | Room type (sample-size trap) | ✅ | ✅ | ✅ | ✅ (weak reasoning) |
 | Seasonality, listings only | ✅ (honest gap) | ✅ (honest + diagnosed cause) | ❌ (fabricated) | ❌ (fabricated) |
 | Seasonality, with calendar | ✅ | ✅ (caught confound) | Not tested (file limit) | ❌ (fabricated after correction) |
-| Host portfolio | ✅ | ✅ | ✅ | ⚠️ (fabricated host names) |
+| Host portfolio | ✅ | ✅ | ✅ | ❌ (fabricated host names) |
 
 ## Business impact if trusted blindly
 
@@ -90,7 +90,7 @@ Cited one verified, real data point (a specific listing whose stats matched Gemi
 | Finding | ChatGPT | Claude | Gemini | Copilot |
 |---|---|---|---|---|
 | Seasonality mentioned unprompted | ❌ | ❌ | ❌ | ❌ |
-| Room-type trap addressed unprompted | Avoided (narrowed scope) | ⚠️ No caveat this time | Avoided (silent omission) | Avoided (silent omission) |
+| Room-type trap addressed unprompted | Avoided (narrowed scope) | No caveat this time | Avoided (silent omission) | Avoided (silent omission) |
 | New unprompted value-add | Licensing/zoning risk | Licensing workaround pattern (quantified) + stale-listing filter | Mid-term rental strategy angle | Regulatory pattern (unquantified) |
 | Notable issue | Host-count inconsistency vs. round 1 | Dropped its own round-1 caveat | Computed real stats but didn't use them in the final answer | Blended unverified/unsupported claims with real ones |
 
